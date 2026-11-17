@@ -1,0 +1,143 @@
+/* إعدادات عامة وتصفير الهوامش */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* تمرير ناعم عند الضغط على الروابط */
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.8;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* تنسيق الهيدر العلوي */
+.main-header {
+    background: linear-gradient(135deg, #a82525 0%, #2a5298 100%);
+    color: #fff;
+    padding: 40px 0 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #d0e1f9;
+    margin-bottom: 25px;
+}
+
+/* قائمة التنقل */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* تنسيق المحتوى والبطاقات */
+.main-content {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-right: 5px solid #2a5298; /* شريط جانبي ملون */
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px); /* حركة خفيفة عند تمرير الماوس */
+}
+
+.card h2 {
+    color: #213aa8;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+.card h3 {
+    color: #2a5298;
+    margin: 15px 0 10px;
+}
+
+/* القوائم وصناديق التمييز */
+.styled-list {
+    padding-right: 20px;
+}
+
+.styled-list li {
+    margin-bottom: 10px;
+}
+
+.highlight-box {
+    background-color: #eef4fc;
+    border-right: 4px solid #1e3c72;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+    color: #1a365d;
+}
+
+.references-card ol {
+    padding-right: 20px;
+    color: #555;
+}
+
+/* الفوتر */
+.main-footer {
+    background-color: #1e3c72;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* التجاوب مع شاشات الموبايل */
+@media (max-width: 600px) {
+    .main-header h1 {
+        font-size: 1.6rem;
+    }
+    .card {
+        padding: 20px;
+    }
+}
